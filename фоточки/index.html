@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея с фильтрацией</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Галерея изображений</h1>
+        <div class="filters">
+            <button class="filter-btn" data-filter="all">Все</button>
+            <button class="filter-btn" data-filter="nature">Природа</button>
+            <button class="filter-btn" data-filter="animals">Животные</button>
+            <button class="filter-btn" data-filter="cities">Города</button>
+        </div>
+        <div class="gallery" id="gallery">
+            <!-- Карточки будут добавлены с помощью JavaScript -->
+        </div>
+        <div class="add-image-form">
+            <h2>Добавить новое изображение</h2>
+            <form id="addImageForm">
+                <input type="file" id="imageFile" accept="image/*" required>
+                <input type="text" id="imageTitle" placeholder="Название" required>
+                <textarea id="imageDescription" placeholder="Описание" required></textarea>
+                <input type="text" id="imageTags" placeholder="Теги (через запятую)" required>
+                <button type="submit">Добавить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
